@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Друзі Тварин</title>
+    <meta name="description" content="Інформація про ветеринарну клініку Друзі Тварин, наші послуги та команду">
+    <meta name="keywords" content="ветеринарна клініка, догляд за тваринами, ветеринар, лікування тварин">
+    <link rel="canonical" href="https://www.druzitvaryn.com/about.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png.png" alt="Логотип"></a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="recording.html">Записатися</a></li>
+            </ul>
+        </nav>
+        <div class="konotop">
+            <img src="location.jpg" alt="Локація">
+            <a href="#">МІСТО</a>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <h1>Про нашу ветлікарню</h1>
+        
+        <section id="about-us">
+            <h2>Хто ми</h2>
+            <p>Ми - команда професіоналів, віддана здоров'ю та щастю ваших улюбленців. Наша клініка працює вже понад 10 років, надаючи якісні ветеринарні послуги.</p>
+            
+            <!-- Пункт 6: Слайдер зображень -->
+            <div id="imageSlider">
+                <div class="image-section">
+                <img src="Зображення 1.jpg" alt="попугай"width="500" style="display: block; max-width: 100%; height: auto;">
+                 <img src="Зображення 2.webp" alt="хомяк"width="500" style="display: block; max-width: 100%; height: auto;">
+                 <bir>
+                 <button id="prevBtn" type="button">Попереднє</button>
+                <button id="nextBtn" type="button">Наступне</button>
+                </bir>
+            </div>
+        </section>
+
+        <section id="our-services">
+            <h2>Наші послуги</h2>
+            <ul>
+                <li>Терапія</li>
+                <li>Хірургія</li>
+                <li>Стоматологія</li>
+                <li>Вакцинація</li>
+                <li>Діагностика</li>
+            </ul>
+        </section>
+        
+        <section id="our-team">
+            <h2>Наша команда</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Ім'я</th>
+                        <th>Посада</th>
+                        <th>Досвід</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Ім'я">Др. Іванов</td>
+                        <td data-label="Посада">Головний ветеринар</td>
+                        <td data-label="Досвід">15 років</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Ім'я">Др. Петренко</td>
+                        <td data-label="Посада">Хірург</td>
+                        <td data-label="Досвід">10 років</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Ім'я">Др. Коваленко</td>
+                        <td data-label="Посада">Дерматолог</td>
+                        <td data-label="Досвід">8 років</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Розклад роботи лікарів</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>День тижня</th>
+                        <th>Др. Іванов</th>
+                        <th>Др. Петренко</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="День тижня">Понеділок</td>
+                        <td data-label="Др. Іванов">09:00 – 15:00</td>
+                        <td data-label="Др. Петренко">12:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="День тижня">Вівторок</td>
+                        <td data-label="Др. Іванов">09:00 – 15:00</td>
+                        <td data-label="Др. Петренко">12:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="День тижня">Середа</td>
+                        <td data-label="Др. Іванов">09:00 – 15:00</td>
+                        <td data-label="Др. Петренко">Вихідний</td>
+                    </tr>
+                    <tr>
+                        <td data-label="День тижня">Четвер</td>
+                        <td data-label="Др. Іванов">Вихідний</td>
+                        <td data-label="Др. Петренко">12:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="День тижня">П'ятниця</td>
+                        <td data-label="Др. Іванов">09:00 – 15:00</td>
+                        <td data-label="Др. Петренко">12:00 – 18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="testimonials">
+            <h2>Відгуки клієнтів</h2>
+            <blockquote>
+                <p>"Найкраща ветеринарна клініка в місті! Дуже дбайливе ставлення до тварин."</p>
+                - <cite>Марія К.</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Швидко допомогли нашому котику, дуже вдячні персоналу за професіоналізм."</p>
+                - <cite>Олександр П.</cite>
+            </blockquote>
+        </section>
+
+        <!-- Пункт 5: Форма зворотного зв'язку -->
+        <section id="contact-us"> 
+            <h2>Зв'яжіться з нами</h2> 
+            <form id="contactForm"> 
+                <label for="name">Ім'я:</label> 
+                <input type="text" id="name" name="name" required> 
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required> 
+                <label for="message">Повідомлення:</label> 
+                <textarea id="message" required></textarea> 
+                <button type="submit">Надіслати</button> 
+            </form> 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ветеринарна клініка «Друзі Тварин». Усі права захищені.</p>
+    </footer>
+
+    <!-- Підключення JavaScript -->
+    <script src="script/script.js"></script>
+</body>
+</html>

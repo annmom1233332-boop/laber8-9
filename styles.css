@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+ background-color: #F5F5F5;
+ color: #333;
+}
+
+/* Шапка сайту (Header) */
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #4A1515;
+ padding: 15px 40px;
+ color: white;
+}
+
+.logo {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+}
+
+.logo img {
+ height: 40px;
+width: auto;
+}
+
+.logo a {
+color: white;
+ text-decoration: none;
+ font-weight: bold;
+font-size: 18px;
+}
+
+.navigation ul {
+ list-style: none;
+ display: flex;
+gap: 25px;
+ margin: 0;
+ padding: 0;
+}
+
+.navigation a {
+ color: #f8b489;
+text-decoration: none;
+ font-size: 14px;
+}
+
+.navigation a:hover {
+ color: white;
+}
+
+.konotop {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+}
+
+.konotop img {
+ width: 18px;
+height: 24px;
+}
+
+.konotop a {
+ color: #f8b489;
+text-decoration: none;
+font-size: 14px;
+}
+
+/* Основний контент та бічне меню (Container & Sidebar) */
+.container {
+ display: flex;
+ min-height: calc(100vh - 140px);
+}
+
+.sidebar {
+ width: 70px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 30px;
+}
+
+.sidebar ul {
+list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+padding: 0;
+ margin: 0;
+}
+
+.sidebar a {
+ text-decoration: none;
+ color: #888;
+ font-size: 14px;
+}
+
+/* Активний номер у кружечку як у Figma */
+.sidebar .active {
+ font-weight: bold;
+ color: #000;
+ border: 1px solid #000;
+ border-radius: 50%;
+ width: 28px;
+ height: 28px;
+ display: flex;
+align-items: center;
+ justify-content: center;
+}
+
+.content {
+ display: flex;
+ justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 40px 60px;
+}
+
+.text-section h1 {
+ color: #4A1515;
+ font-size: 52px;
+line-height: 1.1;
+margin-bottom: 20px;
+}
+
+.text-section h2 {
+color: #4A1515;
+font-size: 28px;
+ margin-bottom: 30px;
+}
+
+/* Кнопки */
+.button {
+ display: inline-block;
+ background-color: #FF6B6B;
+ color: white;
+ padding: 12px 35px;
+ border-radius: 25px;
+ text-decoration: none;
+ font-weight: bold;
+font-size: 16px;
+border: none;
+ cursor: pointer;
+}
+
+.image-section img {
+ max-width: 480px;
+ height: auto;
+}
+
+/* Підвал (Footer) з горизонтальними іконками та фіксованим розміром */
+footer {
+ background-color: #4A1515;
+ padding: 15px 40px;
+}
+
+footer .socials-list {
+ display: flex !important;
+ flex-direction: row !important;
+ align-items: center !important;
+ gap: 15px !important;
+ list-style: none !important;
+ margin: 0 !important;
+ padding: 0 !important;
+}
+
+footer .socials-list img {
+ width: 24px !important;
+height: 24px !important;
+ min-width: 24px !important;
+ min-height: 24px !important;
+max-width: 24px !important;
+ max-height: 24px !important;
+object-fit: contain !important;
+ display: inline-block !important;
+}
+/* Стили для страницы оформления заказа (Recording) */
+.recording-container {
+ padding: 30px 80px;
+ min-height: calc(100vh - 140px);
+}
+
+.recording-content {
+ max-width: 600px;
+}
+
+.back-link {
+color: #FF6B6B;
+  text-decoration: none;
+   font-weight: bold;
+ font-size: 14px;
+ display: inline-block;
+margin-bottom: 15px;
+}
+
+.recording-content h1 {
+ color: #4A1515;
+ font-size: 36px;
+ margin-bottom: 25px;
+}
+
+.recording-form {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.recording-form input,
+.recording-form textarea {
+ width: 100%;
+ padding: 12px 15px;
+ border: 1px solid #888;
+ border-radius: 4px;
+ font-size: 14px;
+ background-color: #fff;
+color: #333;
+ font-family: Arial, sans-serif;
+}
+
+.recording-form textarea {
+ resize: vertical;
+ height: 100px;
+}
+
+.recording-form .button {
+ align-self: center;
+ margin-top: 15px;
+ width: 200px;
+ text-align: center;
+}
+/* Жорстке зменшення картинок у слайдері */
+#imageSlider {
+ width: 400px; /* Фіксована ширина контейнера слайдера */
+ margin: 20px auto; /* Центрування на сторінці */
+ text-align: center;
+}
+
+#imageSlider img {
+ width: 100% !important; 
+ max-width: 400px !important; 
+ height: 250px !important;
+ object-fit: cover !important;
+ border-radius: 8px;
+}
+
+#imageSlider button {
+ padding: 8px 16px;
+ margin: 10px 5px;
+ cursor: pointer;
+ background-color: #b67b73;
+ color: white;
+ border: none;
+border-radius: 4px;
+}
+/* Стилі для таблиць (Наша команда та Розклад) */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table th {
+    background-color: #b67b73;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
